@@ -38,10 +38,14 @@ void send_signals(int *binary, char *pid, int count)
 	while (i < count)
 	{
 		if (binary[i] == 0)
+		{
 			kill(ft_atoi(pid), SIGUSR1);
+		}
 		else
+		{
 			kill(ft_atoi(pid), SIGUSR2);
-		usleep(5000);	
+		}
+		usleep(100);	
 		i++;
 	}
 }
