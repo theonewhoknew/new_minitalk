@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dtome-pe <dtome-pe@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/27 17:04:52 by dtome-pe          #+#    #+#             */
+/*   Updated: 2023/05/27 17:08:48 by dtome-pe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "minitalk.h"
 #include <sys/types.h>
 #include <signal.h>
@@ -5,11 +17,11 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int *to_binary(int number)
+int	*to_binary(int number)
 {	
-	int c;
-	int *binary;
-	int i;
+	int	c;
+	int	*binary;
+	int	i;
 
 	i = 0;
 	c = count_numbers(number);
@@ -30,9 +42,9 @@ int *to_binary(int number)
 	return (binary);
 }
 
-void send_signals(int *binary, char *pid, int count)
+void	send_signals(int *binary, char *pid, int count)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < count)
@@ -45,17 +57,17 @@ void send_signals(int *binary, char *pid, int count)
 		{
 			kill(ft_atoi(pid), SIGUSR2);
 		}
-		usleep(100);	
+		usleep(100);
 		i++;
 	}
 }
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {	
-	int decimal;
-	int count;
-	int *binary;
-	int i;
+	int	decimal;
+	int	count;
+	int	*binary;
+	int	i;
 
 	i = 0;
 	if (argc != 3)
@@ -73,4 +85,4 @@ int main(int argc, char *argv[])
 		i++;
 	}
 	return (0);
-} 
+}

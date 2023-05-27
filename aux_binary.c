@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   aux_binary.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dtome-pe <dtome-pe@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/27 17:03:36 by dtome-pe          #+#    #+#             */
+/*   Updated: 2023/05/27 17:04:13 by dtome-pe         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "minitalk.h"
 
-int count_numbers(int number)
+int	count_numbers(int number)
 {
-	int c;
+	int	c;
 
 	c = 0;
 	while (number > 0)
@@ -13,7 +25,7 @@ int count_numbers(int number)
 	return (c);
 }
 
-void swap(int *binary, int number, int i, int c)
+void	swap(int *binary, int number, int i, int c)
 {
 	while (i < c)
 	{
@@ -26,9 +38,9 @@ void swap(int *binary, int number, int i, int c)
 	}
 }
 
-void pad(int *binary, int pad)
+void	pad(int *binary, int pad)
 {	
-	int i;
+	int	i;
 
 	i = 7;
 	while (pad)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: theonewhoknew <theonewhoknew@student.42    +#+  +:+       +#+        */
+/*   By: dtome-pe <dtome-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 09:28:29 by dtome-pe          #+#    #+#             */
-/*   Updated: 2023/05/17 11:10:44 by theonewhokn      ###   ########.fr       */
+/*   Updated: 2023/05/27 17:29:04 by dtome-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-static size_t ft_add_len(unsigned long temp, size_t len)
+static size_t	ft_add_len(unsigned long temp, size_t len)
 {
 	while (temp > 15)
 	{
@@ -24,7 +24,8 @@ static size_t ft_add_len(unsigned long temp, size_t len)
 	return (len + 1);
 }
 
-static char* ft_create_arr(char *str, unsigned long temp, unsigned long n, int i)
+static char	*ft_create_arr(char *str, unsigned long temp,
+			unsigned long n, int i)
 {
 	while (i >= 0)
 	{
@@ -39,14 +40,14 @@ static char* ft_create_arr(char *str, unsigned long temp, unsigned long n, int i
 	return (str);
 }
 
-size_t ft_putadd(void *ptr)
+size_t	ft_putadd(void *ptr)
 {
-	size_t len;
-	unsigned long  n;
-	unsigned long  temp;
-	int i;
-	char *str;
-	
+	size_t			len;
+	unsigned long	n;
+	unsigned long	temp;
+	int				i;
+	char			*str;
+
 	len = 0;
 	str = NULL;
 	if (!ptr)

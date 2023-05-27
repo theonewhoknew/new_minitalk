@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: theonewhoknew <theonewhoknew@student.42    +#+  +:+       +#+        */
+/*   By: dtome-pe <dtome-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 09:55:57 by dtome-pe          #+#    #+#             */
-/*   Updated: 2023/05/15 20:41:46 by theonewhokn      ###   ########.fr       */
+/*   Updated: 2023/05/27 17:22:57 by dtome-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_putnbr(int n)
 {
 	long	number;
 	size_t	count;
-	
+
 	count = 0;
 	number = 0;
 	number = (long) n;

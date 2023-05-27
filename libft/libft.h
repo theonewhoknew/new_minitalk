@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: theonewhoknew <theonewhoknew@student.42    +#+  +:+       +#+        */
+/*   By: dtome-pe <dtome-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 09:35:45 by dtome-pe          #+#    #+#             */
-/*   Updated: 2023/05/24 17:22:57 by theonewhokn      ###   ########.fr       */
+/*   Updated: 2023/05/27 17:20:47 by dtome-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_list
 
 typedef struct s_double_list
 {
-	int			content;
+	int						content;
 	struct s_double_list	*next;
 	struct s_double_list	*prev;
 }		t_dlist;
@@ -84,15 +84,15 @@ void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 /*new ones*/
-size_t 	ft_putadd(void *ptr);
-size_t	ft_putunbr(unsigned int n);
-size_t	ft_puthexnbr(unsigned int n, char *base);
-int		ft_contains_digit(char *str);
-t_dlist	*ft_dlstnew(int content);
-void	ft_dlstadd_back(t_dlist **head, t_dlist **tail, t_dlist *new);
-t_dlist	*ft_dlstlast(t_dlist *lst);
-void	ft_dlstadd_front(t_dlist **lst, t_dlist *new);
-void 	ft_reverse_tab(int* tab, int n);
-void 	ft_printarr(int *arr, int n);
+size_t		ft_putadd(void *ptr);
+size_t		ft_putunbr(unsigned int n);
+size_t		ft_puthexnbr(unsigned int n, char *base);
+int			ft_contains_digit(char *str);
+t_dlist		*ft_dlstnew(int content);
+void		ft_dlstadd_back(t_dlist **head, t_dlist **tail, t_dlist *new);
+t_dlist		*ft_dlstlast(t_dlist *lst);
+void		ft_dlstadd_front(t_dlist **lst, t_dlist *new);
+void		ft_reverse_tab(int *tab, int n);
+void		ft_printarr(int *arr, int n);
 
 #endif

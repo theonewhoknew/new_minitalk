@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: theonewhoknew <theonewhoknew@student.42    +#+  +:+       +#+        */
+/*   By: dtome-pe <dtome-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 09:54:31 by dtome-pe          #+#    #+#             */
-/*   Updated: 2023/05/15 20:51:04 by theonewhokn      ###   ########.fr       */
+/*   Updated: 2023/05/27 17:24:24 by dtome-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 size_t	ft_putchar(char c)
 {	
-	size_t n;
+	size_t	n;
 
 	n = 0;
 	write(1, &c, 1);
 	n++;
 	return (n);
-
 }
